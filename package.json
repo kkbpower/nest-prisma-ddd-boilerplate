@@ -19,6 +19,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "prettier": "prettier --write --config ./.prettierrc './src/**/*.ts' './prisma/*.prisma'",
+    "prisma:generate": "prisma generate --schema=src/config/prisma/schema.prisma",
     "prisma:help": "echo 'Prisma 명령어:\n  - generate:\tprisma generate --schema=prisma {파일 경로}\n  - migration:\tprisma migrate dev --name {파일명}' && exit 0"
   },
   "dependencies": {

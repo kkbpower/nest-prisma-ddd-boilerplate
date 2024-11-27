@@ -1,7 +1,7 @@
 export default interface BaseRepository<T> {
   getAll(): Promise<T[]>;
-  getById(id: string): Promise<T>;
+  getById(id: number): Promise<T>;
   create(data: T): Promise<T>;
-  update(id: string, data: T): Promise<T>;
-  delete(id: string): Promise<boolean>;
+  update(id: number, data: T): Promise<T>;
+  delete(id: number): Promise<boolean>;
 }
